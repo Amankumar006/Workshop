@@ -1,13 +1,18 @@
-import React from 'react';
+import React ,{useEffect,useState} from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+ import Counter from './components/counter';
+//  import Button from './components/button';
+//  import Form from './components/form';    
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Counter />
+    {/* <Button />
+    <Form title="Contact Us" onSubmit={(data) => console.log('Form submitted:', data)} /> */}
   </React.StrictMode>
 );
 
